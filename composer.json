@@ -1,0 +1,23 @@
+{
+    "name": "kustov-vitalik/apple-push-notifications-wrapper",
+    "type": "library",
+    "description": "Wrapper for sending push notification",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vitaly Kustov",
+            "email": "kustov.vitalik@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.1",
+        "apple/apn-push": "~3.0.0",
+        "psr/log": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "VitalyKustov\\": "lib/src/"
+        }
+    }
+}
