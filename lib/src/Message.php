@@ -27,7 +27,7 @@ class Message
     /**
      * @var array
      */
-    private $customData;
+    private $customData = [];
 
     /**
      * @return string[]
