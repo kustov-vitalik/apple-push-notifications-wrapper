@@ -101,7 +101,7 @@ class ApplePushNotificationSender
 
                 foreach ($message->getDeviceTokens() as $deviceToken) {
                     try {
-                        $sender->send(new Receiver(new DeviceToken($deviceToken), $this->applicationBundleId), $notification);
+                        $sender->send(new Receiver(new DeviceToken($deviceToken), $this->applicationBundleId), $notification, $env === 'sandbox');
                     } catch (\Throwable $e) {
                         $this->logger->warning(sprintf('[%s] Failed to send push: %s', $env, $e->getMessage()));
                     }
